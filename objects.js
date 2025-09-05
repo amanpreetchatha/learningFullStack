@@ -15,5 +15,14 @@ var foodItem = {
     vitaminD : 0,
     calcium : 0.050,
     iron : 0.003,
-    potassium : 0.100
+    potassium : 0.100,
+    22: "hi",
+    $: 2000,
+     
 }
+
+console.log(foodItem["potassium"]);
+console.log(foodItem.potassium);
+console.log(foodItem.$);
+
+console.log(console)
