@@ -5,8 +5,9 @@ let myObject = {
 }
 //let array=Object.entries(myObject);
 
-let array = [2022, "volvo", myObject, 22.43, "jjajf", 322];
-let array1 = new Array(2022, "volvo", myObject);
+let array = [2022, "volvo", 22.43, "jjajf", 322];
+//let array1 = new Array(2022, "volvo", myObject);
+let array1 = [323,324,325,"326"];
 
 console.clear();
 //console.log(array1.at(-10));
@@ -29,4 +30,20 @@ for( let [key,value] of array){
     console.log(key,value)
 }
 */
+//const [year, make, nextvalue] = array;
+//console.log(nextvalue);
+
+//let mergedArray=[...array,array1];
+//let mergedArray=[...array1,...array];
+
+let objectArray={...array}
+//console.log(array.__proto__);
+
+
+let myArr = ["b","a","s","c"];
+
+console.log(myArr.slice(1,));
+//let myArr2= myArr.slice(2,3);
+console.log("array1:",myArr);
+
 

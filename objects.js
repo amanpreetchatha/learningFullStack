@@ -21,8 +21,36 @@ var foodItem = {
      
 }
 
+/*
 console.log(foodItem["potassium"]);
 console.log(foodItem.potassium);
 console.log(foodItem.$);
 
 console.log(console)
+*/
+
+//const { ...allother} = foodItem;
+
+//console.log(name, flavor, protein, itemCalories);
+//console.log(allother);
+//Object.seal(allother);
+//allother.calciuum = 1;
+
+//console.log(allother.calciuum);
+
+//Object.defineProperty(foodItem, "company", {value: "Pepsi Co.", writable: true});
+//console.log(foodItem);
+//console.log(foodItem.company);
+//foodItem.company = "Frito Lays";
+//console.log(foodItem["company"]);
+
+let mealType = {
+    breakFast: "Breakfast",
+    lunch: "Lunch",
+    dinner: "Dinner",
+    snack: "Snack",
+    22: "hello world"
+}
+
+let mergedObject = {...foodItem,...mealType};
+console.log(mergedObject);
