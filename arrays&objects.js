@@ -40,10 +40,45 @@ let objectArray={...array}
 //console.log(array.__proto__);
 
 
-let myArr = ["b","a","s","c"];
+//let myArr = ["b","a","s","c"];
 
-console.log(myArr.slice(1,));
+//console.log(myArr.slice(1,));
 //let myArr2= myArr.slice(2,3);
-console.log("array1:",myArr);
+//console.log("array1:",myArr);
+
+//console.log(objectArray);
+
+/*
+Shallow Copy example:
+
+let shallowCopy=objectArray;
+console.log("Shallow Copy:",shallowCopy);
+shallowCopy[0]=2023;
+shallowCopy[1]="frightliner";
+shallowCopy[2]=43.22;
+
+console.log("\n");
+console.log("Original Copy:",objectArray);
+objectArray[0]="1999";
+console.log("Shallow Copy:",shallowCopy);
+*/
+
+
+/* 
+Deep Copy example:
+
+let deepCopy=structuredClone(objectArray);
+console.log("deep Copy:",deepCopy);
+deepCopy[0]=2023;
+deepCopy[1]="frightliner";
+deepCopy[2]=43.22;
+
+console.log("\n");
+console.log("Original Copy:",objectArray);
+console.log("\n");
+objectArray[0]="1999";
+console.log("Deep Copy:",deepCopy);
+*/
+//console.error("You made an error");
 
 
