@@ -1,3 +1,5 @@
+"use strict"
+
 /*
 function fib(n) {
     // Base cases
@@ -36,12 +38,14 @@ console.log(operation(valueA,valueB));
 
 let numArray = [22,34,2,45,22,42,57,90,98,62,41,75,82,43,12,37];
 
-/*function printToConsole(arg){
+/*console.log(this);
+function printToConsole(arg){
     console.log(arg);
+    console.log(this);
 }
 
-printToConsole(...numArray);
-
+printToConsole(numArray);
+/*
 let printToConsole = function(arg){
     console.log(arg);
 }
@@ -69,4 +73,16 @@ printToConsole.print(numArray);
 })
 (numArray);
 console.log("\n\n");
+
+
+//console.log(this);
+let myFunction = function(arg) {
+    let innerFunction = (arg1) =>{
+        console.log("Inner Functions :",arg1);
+        console.log(this);
+    }
+
+    innerFunction(arg);
+}
+myFunction(numArray);
 */
