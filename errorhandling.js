@@ -1,5 +1,5 @@
 //different error handling techniques in javascript
-console.clear();
+/*console.clear();
 console.time("exeTime");
 
 function checkIfValid(number){
@@ -35,8 +35,23 @@ console.count("mycounter");
 console.count("mycounter");
 console.countReset("mycounter");
 console.count("mycounter");
-*/
+
 
 
 
 console.timeEnd("exeTime");
+*/
+try{
+    console.log("Now x is",x);
+    let a = x + n;
+    console.log(a);
+}catch(err){
+    x=0;
+    console.error(err.message);
+    console.log("Now x is",x);
+}finally{
+    let x = 2;
+    console.log("Now x is",x);
+}
+
+//console.log("Now x is",x);
