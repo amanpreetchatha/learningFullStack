@@ -44,3 +44,31 @@ console.log(userA.getName());
 
 
 */
+
+
+function* infiniteItirator(){
+    let counter = 0;
+    while(true){
+        yield counter;
+        counter++;
+    }
+}
+
+let counterA = infiniteItirator();
+let counterB = infiniteItirator();
+
+
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next());
+console.log(counterA.next()); 
+
+
+
+console.log(counterB.next());
+console.log(counterB.next());
+console.log(counterB.next());
