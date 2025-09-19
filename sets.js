@@ -48,6 +48,18 @@ cityNames.forEach((item,d,a)=>{
 
 
 let arrA = Array.from(mergedSet);
-console.log(mergedSet )
+//console.log(mergedSet )
 let againSet = new Set(arrA);
-console.log(againSet)
+//console.log(againSet)
+
+
+
+let setIti =mergedSet[Symbol.iterator]();
+//console.log(setIti.next(),"    ", setIti.next());
+
+for(let i of setIti){
+    console.log(i)
+    
+}
+
+

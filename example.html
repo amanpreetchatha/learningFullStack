@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Event Listener
+        </title>
+        
+    </head>
+    <body>
+        <h1>Example Domain</h1>
+    </body>
+    <script>
+                var h1 = document.querySelector('h1');
+
+                var arr = [
+                'Example Domain',
+                'First Click',
+                'Second Click',
+                'Third Click']
+
+                function handleClicks(){
+                    
+                    console.log(h1.innerText)
+                    switch(h1.innerText){
+                        
+                        case arr[0]:
+                            h1.innerText = arr[1];
+                            console.log(arr,h1.innerText)
+                            break;
+                        case arr[1]:
+                            h1.innerText = arr[2];
+                            break;
+                        case arr[2]:
+                            h1.innerText = arr[3];
+                            break;
+                        default:
+                            h1.innerText = arr[0];
+                            //console.log('inside switch',h1.innerText)
+                    }
+                   
+                }
+                //h1.addEventListener('click',handleClicks);
+                h1.addEventListener('click',handleClicks);
+        </script>
+</html>

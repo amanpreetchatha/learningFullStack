@@ -1,0 +1,16 @@
+{
+  "name": "learningfullstack",
+  "version": "1.0.0",
+  "description": "Practice files for learning and testing.",
+  "main": "addFive.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  }
+}
