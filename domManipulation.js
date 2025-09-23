@@ -26,5 +26,5 @@ function myFunction(){
 pElement.addEventListener('click',myFunction);
 clearButton.addEventListener('click',()=>{
     let counter = document.getElementById('counter');
-    counter.textContent = 0.105;
+    counter.textContent = 0;
 })
